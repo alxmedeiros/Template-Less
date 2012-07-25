@@ -1,0 +1,99 @@
+@import 'grid.less';
+
+
+//////////
+// GRID //
+//////////
+
+// Specify the number of columns and set column and gutter widths
+@columns: 12;
+@column-width: 60;
+@gutter-width: 20;
+
+// Remove the definition below for a pixel-based layout
+@total-width: 100%;
+
+/* less functions */
+@base-url: "http://dominio.com";
+
+.center(@width: 960px, @margin: 0 auto) {
+	width: @width;
+	margin: @margin;
+}
+
+/* default */
+*{margin:0; padding:0;}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; overflow-x:hidden; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+body { margin: 0; font-size: 62.5%; line-height: 1.231; }
+body, button, input, select, textarea { font-family: "Trebuchet MS"; color: #222; }
+html, body, #wrap {height:100%;}
+#wrap {height: auto; min-height: 100%; width:100%; margin:0 auto;}
+body:before {content:"";height:100%;float:left;width:0;margin-top:-32767px;}
+/*.sprite{background:url("@{base-url}/imagens/sprite.png") no-repeat}*/
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+a { color: #000; text-decoration:none }
+a:hover { color: #000; text-decoration:underline}
+
+/* ==|== non-semantic helper classes ======================================== */
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+.invisible { visibility: hidden; }
+.clear{clear:both;}
+.none{display:none}
+.clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }
+.indent{text-indent:-9999px;}
+.none{display:none;}
+.left{float:left;}
+.right{float:right;}
+.alignnone, .alignleft{float:left; margin:0 10px 10px 0;}
+.alignright{float:right; margin:0 0 10px 10px}	
+.aligncenter {margin-left: auto; margin-right: auto; clear: both; display: block;}
+p, address{color:#000; font-size:1.2em; font-style:normal}
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+small { font-size: 85%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+////////////
+// LAYOUT //
+////////////
+
+#wrap {}
+
+#container {}
+
+header {}
+
+.content {}
+
+/* abaixo do ipad */
+@media screen and (max-width: 720px) {
+	.content {
+		.column(12);
+		margin-bottom: 1em;
+	}
+}
