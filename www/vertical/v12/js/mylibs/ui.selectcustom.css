@@ -1,0 +1,38 @@
+/* Selectmenu
+----------------------------------*/
+.selStyle{position: relative}
+.ui-selectmenu {width:205px !important; color: #9e9e9e; background: #e7e7e7; font-size: 11px; text-decoration:none !important; height: 24px; line-height:0; padding: 0; text-decoration: none; margin:0 1px 0 0; float:left; display: block; position:relative !important; overflow:hidden;} 
+
+.ui-selectmenu-icon {width: 24px; height: 24px; position:absolute; right:0; margin:0; top: 0; background: url(../../imagens/img_select_dir.jpg) no-repeat right;}
+.ui-selectmenu-menu {width: 206px !important; background: #e7e7e7; text-decoration:none; padding:0; margin:0; list-style:none; position:absolute; top: 0; visibility: hidden; overflow: auto; z-index:999}
+.select_maior .ui-selectmenu, .select_maior .ui-selectmenu-menu li, .select_maior .ui-selectmenu-menu li a{width:700px !important}
+
+.ui-selectmenu-open { visibility: visible; }
+.ui-selectmenu-menu-popup { margin-top: -1px; }
+.ui-selectmenu-menu-dropdown { text-decoration:none !important;}
+.ui-selectmenu-menu li { padding:0; margin:0; display: block; border-top: 1px dotted transparent; border-bottom: 1px dotted transparent; text-decoration:none !important; border-right-width: 0 !important; border-left-width: 0 !important; font-weight: normal !important; }
+.ui-selectmenu-menu li a,.ui-selectmenu-status {line-height: 22px; display:block; padding:10px 0 0 10px; outline:none; text-decoration:none; color: #747474; }
+.ui-selectmenu-menu li.ui-selectmenu-hasIcon a, .ui-selectmenu-hasIcon .ui-selectmenu-status { padding-left: 20px; position: relative; margin-left: 5px; }
+.ui-selectmenu-menu li .ui-icon, .ui-selectmenu-status .ui-icon { position: absolute; top: 1em; margin-top: -8px; left: 0; }
+.ui-selectmenu-status { line-height: 1.4em; }
+.ui-selectmenu-open li.ui-selectmenu-item-focus a { background: #d6d4d4; }
+.ui-selectmenu-open li.ui-selectmenu-item-selected { }
+.ui-selectmenu-menu li span,.ui-selectmenu-status span { display:block; margin-bottom: .2em; }
+.ui-selectmenu-menu li .ui-selectmenu-item-header { font-weight: bold; }
+.ui-selectmenu-menu li .ui-selectmenu-item-content {  }
+.ui-selectmenu-menu li .ui-selectmenu-item-footer { opacity: .8; }
+
+.ui-selectmenu-menu li a, .ui-selectmenu-status{padding: 5px 0 0 10px; font-size:1.0em; color:#747474; text-decoration:none !important}
+.ui-selectmenu-menu .ui-selectmenu-group { font-size: 1em; }
+.ui-selectmenu-menu .ui-selectmenu-group .ui-selectmenu-group-label { line-height: 1.4em; display:block; padding:.6em .5em 0; font-weight: bold; }
+.ui-selectmenu-menu .ui-selectmenu-group ul { margin: 0; padding: 0; }
+
+.select_cargo .ui-selectmenu{width:265px !important;}
+#filter-menu{width:266px !important;}
+
+.select_sexo .ui-selectmenu{width:271px !important;}
+#filter3-menu{width:274px !important;}
+
+.select_cidade .ui-selectmenu{width:250px !important; height: 26px; background: #fff; }
+.select_cidade  .ui-selectmenu-icon {background: url(../../imagens/seta_select_branco.jpg) no-repeat right;}
+.select_cidade .ui-selectmenu, .select_cidade .ui-selectmenu-menu li a{width:250px !important; background: #fff;}
