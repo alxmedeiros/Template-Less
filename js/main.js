@@ -1,22 +1,24 @@
+var Namespace = {};
+
 require([
+    "jquery", 
+    /* Libs de terceiros: Jquery.tools, jquery.validate, etc. */
+    /*'libs/lib',*/
+    
+    'modules/common',
+    // Páginas específicas 
+    'modules/home'
 
-		// Carregados em todas as páginas
-		'js/libs/jquery.js',
-        'js/libs/less.js',
-		'js/libs/modernizr.js',		
-        'js/modules/common.js',
+], function($) {
+    $(function() {
+        Namespace.common.init();
 
-        // Páginas específicas 
-        'js/modules/home.js',
+        /* 
+         * Adicionar o atributo rel em cada página, dessa forma você pode ter um js (home.js) para cada página.*/
+        var pageName = $('body').attr('rel');
 
-    ], function(jquery, less, modernizr, common, home){        
-
-    	// Scripts carregados em todas as páginas
-    	common.init();
-
-        var page = $('body').attr('rel');
-
-    	// Carregado arquivo de cada página
-    	eval(page).init();
-        
+        if( (pageName != 'undefined') && (pageName != '') ) {
+            Namespace[pageName].init();
+        }
     });
+});

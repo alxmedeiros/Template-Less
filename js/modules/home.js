@@ -1,7 +1,5 @@
-define(function() {
-    return {
-         init: function() {
-            console.log('home');
-        }
-    }
-});
+Namespace.home = {
+	init: function() {
+		console.log('Iniciado: home');
+	}
+}

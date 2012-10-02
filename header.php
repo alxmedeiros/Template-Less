@@ -12,10 +12,9 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link rel="stylesheet" href="css/style.less" type="text/less" media="screen" />
-	<script data-main="js/main.js" src="js/libs/require.js"></script>
 </head>
 
-<body class="b_inicial">
+<body class="b_inicial" rel="home">
 	<div id="wrap">
 		<div id="container">
 			<header>
