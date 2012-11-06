@@ -12,13 +12,15 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link rel="stylesheet" href="css/style.less" type="text/less" media="screen" />
+	<script src="js/libs/modernizr.js"></script>
+	<script src="js/libs/less.js"></script>
 </head>
 
-<body class="b_inicial" rel="home">
+<body rel="<?php echo $_pagename; ?>">
 	<div id="wrap">
 		<div id="container">
 			<header>
-				<h1><a href="index.php" title="Template" class="logo indent">Template 14/09/2012</a></h1>
+				<h1><a href="index.php" title="Template" class="logo indent">Template 31/10/2012</a></h1>
 				
 			</header><!-- /header -->
 			
